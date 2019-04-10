@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="icon.png" type="image/ico" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style_contact.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+		<title>中原一卡通</title>
+	</head>
+	<body onload="init()">
+		<div id="container">
+			<header>
+				<div id="myNav" class="overlay">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<div class="overlay-content">
+						<a href="index.html">Home</a>
+						<a href="video.html">Video</a>
+						<a href="about.html">About</a>
+						<a href="contact.html">Contact</a>
+					</div>
+				</div>
+				<span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
+				<a class="asd" align="center" style="color: #666666;">contact</a>
+				<script type="text/javascript">
+				function openNav() {
+				document.getElementById("myNav").style.height = "100%";
+				}
+				function closeNav() {
+				document.getElementById("myNav").style.height = "0%";
+				}
+				
+				
+				var initSubject='',initBody='';
+				
+				
+				function submitHandler(){
+					emailRule = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/;
+				var strEmail = emailText.value;
+					if(nameText.value=="")
+					{
+						alert("未輸入姓名");
+					}
+					else if(emailText.value == "")
+				{
+				alert("未輸入信箱");
+				}
+				else if(telText.value == "")
+				{
+				alert("未輸入電話");
+				}
+				else if(subText.value == "")
+				{
+				alert("未輸入主旨");
+				}
+				else if(bodyText.value == "")
+				{
+				alert("未輸入內文");
+				}
+				else if(strEmail.search(emailRule)!= -1){
+				var to = "contact@example.com" ;
+				var name = nameText.value;
+				var email = emailText.value;
+				var tel = telText.value;
+				var subject = subText.value;
+				
+				var body = ""+bodyText.value+'%0A%0A%0A';
+				body += "From："+nameText.value+'%0A';
+				body += "Email："+emailText.value+'%0A';
+				body += "Tel："+telText.value;
+				
+				mailTo.href="mailto:"+to+"?subject="+subject+"&body="+body;
+				mailTo.click();}
+				else{
+				alert("信箱格式錯誤");
+				}
+				
+				}
+				
+				function init(){
+				subText.value=initSubject;
+				toText.value=initTo;
+				bodyText.value=initBody;
+				}
+				</script>
+				
+			</header>
+			<main>
+				<div>
+					<ul>
+						<li>	<h1 align="center" class="huhu">Contact Us</h1>
+							<div class="form-test">
+								<form  enctype="text/plain" accept-charset="utf-8">
+									<legend><span class="number">1</span> 關於自己</legend>
+									<div>
+										<!-- 寄件者姓名    -->
+										<input id="nameText" type="text" name="Name"  value size="60" placeholder="姓名(name)" class="self" required>  <!-- required 必填欄位 ，placeholder 預設內容-->
+										
+										<!-- 寄件者email -->
+										<input id="emailText" type="email" name="Email"  value size="60" placeholder="Email" class="self" required>
+										
+										<!-- 寄件者電話 -->
+										<input id="telText"type="tel" name="Phone"  value size="60" aria-invalid="false" class="self" placeholder="電話(phone)" required>
+										<br>
+										<legend><span class="number">2</span>信箱內容</legend>
+										<!-- 郵件主旨 -->
+										<input class="subject" id="subText" type="text" name="Subject"  value size="60" aria-invalid="false" placeholder="主旨(subject)" required>
+										<br>
+										<!-- 郵件內容 -->
+										<textarea id="bodyText" name="your-message" cols="40" rows="10"  aria-required="true" aria-invalid="false" placeholder="你的訊息(Your Message)" class="text" required></textarea>
+										
+										<!-- 傳送按鈕 -->
+										<div>
+											<input type="button" value="送出訊息" onclick="submitHandler();" class="button button2" >
+											<a id="mailTo"></a>
+										</div>
+									</form>
+								</div>
+								</li>
+								
+								<li><div class="map">
+									<h1 align="center" class="huhu">Map</h1>
+									<center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.251929942323!2d121.23882745059484!3d24.957541847427596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221447a0f021%3A0x2b86d2650bb8bcff!2sChung+Yuan+Christian+University!5e0!3m2!1sen!2stw!4v1554734664752!5m2!1sen!2stw" width="600" height="450" frameborder="0" style="border:0" allowfullscreen ></iframe></center>
+								</div>
+							</li>
+							</li>
+<li><div id="header" style="cursor:pointer;background-color:#66666;width:1500px;height:0px;z-index:-2;" onclick="location.href=
+'index.html';">
+ <div id="test" class="cc"></div></div>
+</li>
+						</ul>
+					</div>
+					<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+					<script>
+					// When the user scrolls down 20px from the top of the document, show the button
+					window.onscroll = function() {scrollFunction()};
+					function scrollFunction() {
+					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					document.getElementById("myBtn").style.display = "block";
+					} else {
+					document.getElementById("myBtn").style.display = "none";
+					}
+					}
+					// When the user clicks on the button, scroll to the top of the document
+					function topFunction() {
+					document.body.scrollTop = 0;
+					document.documentElement.scrollTop = 0;
+					}
+					</script>
+				</main>
+			<footer>@2019CYCUiPASS</footer>
+		</div>
+	</body>
+</html>

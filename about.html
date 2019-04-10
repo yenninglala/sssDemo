@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="icon.png" type="image/ico" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style_about.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+		<title>中原一卡通</title>
+	</head>
+	
+	<body onload="typeWriter()">
+		<div id="container">
+			<header>
+				<div id="myNav" class="overlay">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<div class="overlay-content">
+						<a href="index.html">Home</a>
+						<a href="video.html">Video</a>
+						<a href="about.html">About</a>
+						<a href="contact.html">Contact</a>
+					</div>
+				</div>
+				<span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
+				<a class="about" style="color: #666666;"> About</a>
+				<script type="text/javascript">
+				function openNav() {
+				document.getElementById("myNav").style.height = "100%";
+				}
+				function closeNav() {
+				document.getElementById("myNav").style.height = "0%";
+				}
+				function openwin1() {
+				window.open ("idea/wu.html", "newwindow", "height=400, width=700")
+				}
+				function openwin2() {
+				window.open ("idea/ke.html", "newwindow", "height=400, width=700")
+				}
+				function openwin3() {
+				window.open ("idea/su.html", "newwindow", "height=400, width=700")
+				}
+				function openwin4() {
+				window.open ("idea/yu.html", "newwindow", "height=400, width=700")
+				}
+				
+				</script>
+				
+			</header>
+			<main>
+				<h1 id="demo" align="center" style="font-family: Lucida Handwriting; padding-top: 20px; margin-bottom: -7px;"></h1>
+				<script>
+				var i = 0;
+				var txt = 'About us'; /* The text */
+				var speed = 100; /* The speed/duration of the effect in milliseconds */
+				function typeWriter() {
+				if (i < txt.length) {
+				document.getElementById("demo").innerHTML += txt.charAt(i);
+				i++;
+				setTimeout(typeWriter, speed);
+				}
+				}
+				</script>
+				<content>
+				<img class="about_p2" src="images/4.jpg">
+				<div class="about_container" align="center">
+					<div class="about_about1">
+						<img class="about_p" src="images/wu.jpg">
+						<h3 class="about">組長 吳兆崴</h3>
+						<p class="about">
+							<a class="about_a1" href="https://www.instagram.com/weslewuwu/?hl=zh-tw">ig：weslewuwu</a><br>
+							<a class="about_a1" href="https://www.facebook.com/profile.php?id=100003151478137">fb：吳兆崴</a><br>
+							<input type="button" class="about_button" onclick="openwin1()" value="心得">
+						</p>
+					</div>
+					
+					<div class="about_about2">
+						<img class="about_p" src="images/ke.png">
+						<h3 class="about">組員 柯君儒</h3>
+						<p class="about">
+							<a class="about_a2" href="https://www.instagram.com/ke_jyun_ru/?hl=zh-tw">ig：ke_jyun_ru</a><br>
+							<a class="about_a2" href="https://www.facebook.com/profile.php?id=100003624661666">fb：柯君儒</a><br>
+							<input type="button" class="about_button" onclick="openwin2()" value="心得">
+						</p>
+					</div>
+					
+					<div class="about_about1">
+						<img class="about_p" src="images/su.jpg">
+						<h3 class="about">組員 蘇妍寧</h3>
+						<p class="about">
+							<a class="about_a1" href="https://www.instagram.com/sususu.0410/?hl=zh-tw">ig：sususu.0410</a><br>
+							<a class="about_a1" href="https://www.facebook.com/yenningsusu">fb：蘇妍寧</a><br>
+							<input type="button" class="about_button" onclick="openwin3()" value="心得">
+						</p>
+					</div>
+					
+					<div class="about_about2">
+						<img class="about_p" src="images/yu.jpg">
+						<h3 class="about">組員 曾慶瑜</h3>
+						<p class="about">
+							<a class="about_a2" href="https://www.instagram.com/s19981013s/?hl=zh-tw">ig：s19981013s</a><br>
+							<a class="about_a2" href="https://www.facebook.com/profile.php?id=100002695652164">fb：曾慶瑜</a><br>
+							<input type="button" class="about_button" onclick="openwin4()" value="心得">
+						</p>
+					</div>
+				</div>	
+				</content>		
+			</main>
+		<footer>@2019CYCUiPASS</footer>
+	</div>
+</body>
+</html>

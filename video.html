@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="icon.png" type="image/ico" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style_video.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+		<title>中原一卡通</title>
+	</head>
+	<body background="images/6.gif">
+		<div id="container">
+			<header>
+				<div id="myNav" class="overlay">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<div class="overlay-content">
+						<a href="index.html">Home</a>
+						<a href="video.html">Video</a>
+						<a href="about.html">About</a>
+						<a href="contact.html">Contact</a>
+					</div>
+				</div>
+				<span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">&#9776;</span>
+				<a align="center" style="font-size:23px; color: #666666;">Video</a>
+				<script type="text/javascript">
+				function openNav() {
+				document.getElementById("myNav").style.height = "100%";
+				}
+				function closeNav() {
+				document.getElementById("myNav").style.height = "0%";
+				}
+				</script>
+			</header>
+			<main >
+				<div id="containera">
+					<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+					<div class="animated infinite bounce" id="a" align="center">Our campus</div><br>
+					<center><div id="b" ><p>一位位滿懷大學夢的準大學生,幸運地就讀了私立註冊率最高的中原大學,看著手中剛拿到的學生證,每個人都想知道到底有多神通廣大,就讓這部影片來告訴你吧!</p></div><br></center>
+					<center>
+					
+					
+					<iframe width="700" height="450" src="https://www.youtube.com/embed/JTH8pXg0nBU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+					<br><br><div id="c">Photos</div>
+					<div id="f" ><p>這是來自觀音的曾同學,剛考上中原大學的他,對於手上那張可以任行中原校園的學生證感到十分訝異。</p></div>
+					<div id="d">
+						<img id="myImg" src="images/88.jpg" alt="小瑜劇照" style="width:500PX; height:300px;">
+						<!-- The Modal -->
+						<div class="slideshow-container">
+							<div id="myModal" class="modal">
+								<span class="close">&times;</span>
+								<img class="modal-content" id="img01">
+								<div id="caption"></div>
+							</div>
+						</div>
+						<script>
+						// Get the modal
+						var modal = document.getElementById('myModal');
+						// Get the image and insert it inside the modal - use its "alt" text as a caption
+						var img = document.getElementById('myImg');
+						var modalImg = document.getElementById("img01");
+						var captionText = document.getElementById("caption");
+						img.onclick = function(){
+						modal.style.display = "block";
+						modalImg.src = this.src;
+						captionText.innerHTML = this.alt;
+						}
+						// Get the <span> element that closes the modal
+											var span = document.getElementsByClassName("close")[0];
+											// When the user clicks on <span> (x), close the modal
+																span.onclick = function() {
+																modal.style.display = "none";
+																}
+								</script>
+							</div>
+							<div id="h" ><p>在前往體育館拍攝的途中,柯姓組員忍不住被校狗"辣妹"吸引導致耽誤預定拍攝時間。</p></div>
+							<div id="g">
+								<img id="myImg1" src="images/36.jpg" alt="某柯姓組員賞犬" style="width:500PX; height:300px;">
+								<!-- The Modal -->
+								<div id="myModal1" class="modal1">
+									<span class="close1">&times;</span>
+									<img class="modal-content1" id="img02">
+									<div id="caption1"></div>
+								</div>
+								<script>
+								// Get the modal
+								var modal = document.getElementById('myModal1');
+								// Get the image and insert it inside the modal - use its "alt" text as a caption
+								var img = document.getElementById('myImg1');
+								var modalImg = document.getElementById("img02");
+								var captionText = document.getElementById("caption1");
+								img.onclick = function(){
+								modal.style.display = "block";
+								modalImg.src = this.src;
+								captionText.innerHTML = this.alt;
+								}
+								// Get the <span> element that closes the modal
+									var span = document.getElementsByClassName("close1")[0];
+									// When the user clicks on <span> (x), close the modal
+										span.onclick = function() {
+										modal.style.display = "none";
+										}
+										</script>
+									</div>
+									<div id="MyBlog">
+										<span id="title">Tricks</span>
+										<a target="_blank" href="https://www.youtube.com/embed/lobGnOfSVvM">Watch the Video</a>
+									</div>
+									
+								</div>
+								<div id="containerb">
+								</div>
+								<div id="containerc">
+								</div>
+								<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+								<script>
+								// When the user scrolls down 20px from the top of the document, show the button
+								window.onscroll = function() {scrollFunction()};
+								function scrollFunction() {
+								if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+								document.getElementById("myBtn").style.display = "block";
+								} else {
+								document.getElementById("myBtn").style.display = "none";
+								}
+								}
+								// When the user clicks on the button, scroll to the top of the document
+								function topFunction() {
+								document.body.scrollTop = 0;
+								document.documentElement.scrollTop = 0;
+								}
+								</script>
+							</main>
+						<footer>@2019CYCUiPASS</footer>
+					</div>
+				</body>
+			</html>
